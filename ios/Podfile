@@ -36,6 +36,8 @@ target 'NativeProject' do
 
   pod 'RNScreens', :path => '../node_modules/react-native-screens'
 
+  pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-community/async-storage'
+
   target 'NativeProjectTests' do
     inherit! :search_paths
     # Pods for testing
