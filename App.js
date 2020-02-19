@@ -22,8 +22,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {Header, Colors} from 'react-native/Libraries/NewAppScreen';
 import {enableScreens} from 'react-native-screens';
 
-import HomeScreen from './Pages/Home';
-import DetailsScreen from './Pages/Details';
+import Login from './Pages/Login';
 enableScreens();
 const Stack = createStackNavigator();
 
@@ -40,11 +39,8 @@ const App = () => {
             fontWeight: 'bold',
           },
         }}>
-        <Stack.Screen name="Home">
-          {props => <HomeScreen {...props} />}
-        </Stack.Screen>
-        <Stack.Screen name="Details">
-          {props => <DetailsScreen {...props} />}
+        <Stack.Screen name="Login">
+          {props => <Login {...props} />}
         </Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
